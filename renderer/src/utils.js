@@ -13,12 +13,11 @@ export const parseHeaders = (string) => {
         }
         return headers
     } catch (e) {
-        return null
         console.warn('Error parsing request headers.')
         console.log(e)
+        return null
     }
 }
-
 
 export const parseData = (string) => {
     try {
@@ -28,27 +27,4 @@ export const parseData = (string) => {
         console.log(e)
         return null
     }
-}
-
-export const useDb = () => {
-    const [db, setDB] = useState(null);
-
-    const mutateDb = () => {
-        const low = window.require('lowdb')
-        const FileSync = window.require('lowdb/adapters/FileSync')
-
-        const adapter = new FileSync('./data/db.json')
-        const lowdb = low(adapter)
-
-        lowdb.defaults({ requests: [] })
-            .write()
-
-        setDB(lowdb)
-    }
-
-    useEffect(() => {
-        mutateDb()
-    }, []);
-
-    return [db, mutateDb]
 }
