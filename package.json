@@ -3,7 +3,7 @@
   "copyright": "Copyright © 2020 ${author}",
   "productName": "Postget",
   "appId": "com.al5ina5.${name}",
-  "version": "1.0.0",
+  "version": "0.0.9",
   "main": "main/index.js",
   "scripts": {
     "clean": "rimraf dist renderer/.next renderer/out",
@@ -34,6 +34,7 @@
     "axios": "^0.19.2",
     "electron-is-dev": "^1.1.0",
     "electron-next": "^3.1.5",
+    "js-base64": "^3.2.4",
     "keypress": "^0.2.1",
     "lowdb": "^1.0.0",
     "mousetrap": "^1.6.5",
@@ -43,5 +44,6 @@
     "sass": "^1.26.10"
   },
   "author": "Sebastian Alsina <alsinas@me.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": "https://github.com/al5ina5/postget.git"
 }

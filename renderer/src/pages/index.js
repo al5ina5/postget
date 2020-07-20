@@ -82,14 +82,6 @@ export default function Index() {
 								GET
 							</button>
 						</div>
-						<div></div>
-						<div>
-							<button onClick={(e) => {
-								setRequestURL()
-							}}>
-								RANDOM API
-							</button>
-						</div>
 					</div>
 					<AceEditor
 						mode="json"
