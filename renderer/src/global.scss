@@ -1,0 +1,223 @@
+$mainColor: yellow;
+$border: 1px solid rgba(255, 255, 255, 0.03);
+
+html,
+body,
+#__next {
+    height: 100%;
+    background-color: #141414;
+    color: rgb(247, 247, 247);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    line-height: 1.5;
+}
+
+pre,
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+        monospace;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 0.3rem;
+    border-radius: 3px;
+}
+
+pre {
+    overflow: auto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: 0;
+    opacity: 0;
+    width: 0px;
+    height: 0px;
+}
+
+a {
+    color: $mainColor;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre {
+    margin-bottom: 1rem;
+}
+f section {
+    margin: 3rem;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.4rem;
+}
+h3 {
+    font-size: 1.2rem;
+}
+h4 {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+h5 {
+    opacity: 0.8;
+    font-style: italic;
+}
+h6 {
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+input,
+button,
+textarea {
+    font-size: inherit;
+}
+button {
+    cursor: pointer;
+}
+
+.window {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+
+    .controls {
+        border-bottom: $border;
+        padding: 0.3rem 1rem;
+        font-size: 0.8rem;
+        font-size: 0.8rem;
+        -webkit-app-region: drag;
+        display: flex;
+
+        div {
+            cursor: pointer;
+            // display: inline-block;
+            color: inherit;
+            margin-right: 0.3rem;
+            -webkit-app-region: no-drag;
+            transition: 0.15s ease all;
+        }
+
+        div:last-of-type {
+            margin: 0;
+        }
+
+        div:hover {
+            opacity: 0.5;
+        }
+    }
+
+    .footer {
+        padding: 0.4rem 1rem;
+        text-align: center;
+        font-size: 0.6rem;
+        border-top: $border;
+
+        p {
+            opacity: 0.3;
+            margin-bottom: 0;
+        }
+    }
+
+    .app {
+        display: flex;
+        height: 100%;
+        width: 100%;
+    }
+
+    .pane {
+        height: 100%;
+        width: 50%;
+        overflow: scroll;
+        border-right: $border;
+    }
+
+    .pane.padded {
+        padding: 2rem;
+    }
+}
+
+.response {
+    border-radius: 3px;
+    margin-bottom: 1rem;
+}
+
+// MODULE
+#requestInputs {
+    display: flex;
+    flex-direction: column;
+}
+
+#requestURL {
+    padding: 1rem;
+    display: block;
+    width: 100%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+    border-bottom: $border;
+}
+
+#requestOptions {
+    padding: 1rem;
+    border-bottom: $border;
+
+    div {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    div:last-of-type {
+        margin-right: 0;
+    }
+    button {
+        background: none;
+        border: none;
+        margin: 0;
+        padding: 0;
+        color: inherit;
+        cursor: pointer;
+    }
+
+    button.active {
+        color: $mainColor;
+    }
+}
+
+#sendRequest {
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+    background-color: $mainColor;
+    color: rgba(0, 0, 0, 0.8);
+    border: none;
+    transition: 0.3s ease all;
+}
+
+#sendRequest:hover {
+    opacity: 0.7;
+}
+
+#sendRequest:active {
+    opacity: 1;
+}
+
+.error {
+    color: red;
+    // border: 3px solid rgba(255, 0, 0, 0.5);
+}

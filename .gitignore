@@ -9,8 +9,11 @@
 /coverage
 
 # next.js
-/.next/
-/out/
+renderer/.next/
+renderer/out/
+
+# electron-builder
+dist/
 
 # production
 /build
@@ -32,3 +35,6 @@ yarn-error.log*
 
 # vercel
 .vercel
+
+# datbases n such
+data/
