@@ -7,7 +7,7 @@ const FileSync = require('lowdb/adapters/FileSync')
 process.once('loaded', () => {
   global.ipcRenderer = ipcRenderer
 
-  const adapter = new FileSync('./data/db.json')
+  const adapter = new FileSync('./main/data/db.json')
   const db = low(adapter)
 
   // Set some defaults

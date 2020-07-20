@@ -7,7 +7,8 @@
   "main": "main/index.js",
   "scripts": {
     "clean": "rimraf dist renderer/.next renderer/out",
-    "dev": "nodemon --watch main --exec electron .",
+    "dev": "nodemon --watch main --ignore main/data/* --exec electron .",
+    "start": "electron .",
     "build": "next build renderer && next export renderer",
     "pack-app": "npm run build && electron-builder --dir",
     "dist": "npm run build && electron-builder"
