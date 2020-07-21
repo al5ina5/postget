@@ -1,5 +1,6 @@
 {
   "name": "postget",
+  "description": "Send requests and test your API's with Postget!",
   "copyright": "Copyright © 2020 ${author}",
   "productName": "Postget",
   "appId": "com.al5ina5.${name}",

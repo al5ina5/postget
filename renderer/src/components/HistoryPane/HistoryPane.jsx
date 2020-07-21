@@ -11,7 +11,7 @@ export default function HistoryPane(props) {
                         <pre key={index} onClick={(e) => {
                             props.setRequestURL(request.requestURL)
                             props.setRequestMethod(request.requestMethod)
-                            props.setRequestContent(request.requestContent)
+                            props.setRequestData(request.requestData)
                             props.setRequestHeaders(request.requestHeaders)
                             props.setRequestResponse(request.requestResponse)
                         }}>

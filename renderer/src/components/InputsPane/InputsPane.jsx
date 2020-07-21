@@ -36,10 +36,10 @@ export default function InputsPane(props) {
                 setOptions={{ useWorker: false }}
                 wrapEnabled={true}
                 showPrintMargin={false}
-                value={props.requestContent}
+                value={props.requestData}
                 fontSize="16px"
                 onChange={(e) => {
-                    props.setRequestContent(e)
+                    props.setRequestData(e)
                     props.setParsedRequestContent(parseData(e))
                 }}
             // className={parsedRequestContent ? '' : 'error'}

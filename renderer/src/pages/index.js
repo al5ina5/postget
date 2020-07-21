@@ -14,7 +14,7 @@ export default function Index() {
 
 	var [requestMethod, setRequestMethod] = useState('GET')
 	var [requestURL, setRequestURL] = useState('https://official-joke-api.appspot.com/jokes/ten')
-	var [requestContent, setRequestContent] = useState(initialContent)
+	var [requestData, setRequestData] = useState(initialContent)
 	var [requestHeaders, setRequestHeaders] = useState(initialHeaders)
 	var [parsedRequestContent, setParsedRequestContent] = useState(JSON.parse(initialContent))
 	var [parsedRequestHeaders, setParsedRequestHeaders] = useState()
@@ -29,8 +29,8 @@ export default function Index() {
 					setRequestMethod={setRequestMethod}
 					requestURL={requestURL}
 					setRequestURL={setRequestURL}
-					requestContent={requestContent}
-					setRequestContent={setRequestContent}
+					requestData={requestData}
+					setRequestData={setRequestData}
 					setParsedRequestContent={setParsedRequestContent}
 					requestHeaders={requestHeaders}
 					setRequestHeaders={setRequestHeaders}
@@ -47,7 +47,7 @@ export default function Index() {
 				{historyPaneStatus && <>
 					<HistoryPane
 						setRequestURL={setRequestURL}
-						setRequestMethod={setRequestMethod} setRequestContent={setRequestContent} setRequestHeaders={setRequestHeaders} setRequestResponse={setRequestResponse}
+						setRequestMethod={setRequestMethod} setRequestData={setRequestData} setRequestHeaders={setRequestHeaders} setRequestResponse={setRequestResponse}
 					/>
 				</>}
 			</div>

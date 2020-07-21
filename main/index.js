@@ -37,9 +37,9 @@ app.on('ready', async () => {
   await prepareNext('./renderer')
   createWindow()
 
-  globalShortcut.register('CommandOrControl+N', () => {
-    createWindow()
-  })
+  // globalShortcut.register('CommandOrControl+N', () => {
+  //   createWindow()
+  // })
 })
 
 // Quit the app once all windows are closed

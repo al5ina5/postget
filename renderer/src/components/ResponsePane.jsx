@@ -55,7 +55,7 @@ export default function ResponsePane(props) {
                         .push({
                             requestURL: props.requestURL,
                             requestMethod: props.requestMethod,
-                            requestContent: props.requestContent,
+                            requestData: props.requestData,
                             requestHeaders: props.requestHeaders,
                             parsedRequestContent: props.parsedRequestContent,
                             parsedRequestHeaders: props.parsedRequestHeaders,
