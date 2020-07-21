@@ -19,4 +19,5 @@ Postget was built with developers in mind. Postget provides an easy, fast, light
 # Downloads
 
 Available for macOS, Windows, and Linux.
+
 [Latest Downloads](https://github.com/al5ina5/postget/releases)
