@@ -6,6 +6,12 @@ Postget is built entirely in JavaScript, using Electron, NextJS, React, and more
 
 ![Postget](https://i.imgur.com/OvqdVX8.png)
 
+# Downloads
+
+Available for macOS, Windows, and Linux.
+
+[Latest Downloads](https://github.com/al5ina5/postget/releases)
+
 # Features
 
 Postget was built with developers in mind. Postget provides an easy, fast, lightweight solution to test an API while you're developing or using it.
@@ -15,9 +21,3 @@ Postget was built with developers in mind. Postget provides an easy, fast, light
 -   Apply custom headers to your requests.
 -   View a history of your requests and responses.
 -   Hackable — built with Electron, entirely in HTML/CSS/JS.
-
-# Downloads
-
-Available for macOS, Windows, and Linux.
-
-[Latest Downloads](https://github.com/al5ina5/postget/releases)
